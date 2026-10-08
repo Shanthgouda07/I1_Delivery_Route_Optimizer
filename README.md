@@ -70,25 +70,30 @@ QAOA is then used to sample candidate routes.
 
 ## Final Benchmark
 
+The final benchmark was run on a Qiskit Aer simulator.
+
 | Metric | Classical | QAOA |
 |---|---:|---:|
 | Route distance | 66 | 66 |
-| Runtime | 0.000293 s | 1.269586 s |
 | Optimality gap | 0.00% | 0.00% |
 
-QAOA found the reverse route in the final run:
+The classical brute-force solver found:
 
-`Warehouse → E → D → C → B → A → Warehouse`
+Warehouse → A → B → C → D → E → Warehouse
 
-Because the distance matrix is symmetric, this route has the same total distance of 66.
+QAOA found the reverse route:
 
-Valid sampling rate:
+Warehouse → E → D → C → B → A → Warehouse
 
-**93.76%**
+Because the distance matrix is symmetric, both routes have the same total distance of **66**.
+
+The final QAOA run produced a valid sampling rate of **94.38%**.
+
+Runtime is also recorded in the benchmark CSV, but simulator runtime can vary between runs and should not be interpreted as a measure of quantum advantage.
 
 ## Interpretation
 
-The QAOA experiment successfully sampled an optimal delivery route with a 0% optimality gap.
+The QAOA experiment successfully sampled an optimal delivery route with a **0% optimality gap**.
 
 However, the classical brute-force solver was much faster for this small problem.
 
@@ -97,6 +102,7 @@ Therefore, this experiment does **not** claim quantum advantage.
 Instead, it demonstrates how a delivery routing problem can be formulated as a quantum optimization problem and benchmarked fairly against a classical baseline.
 
 ## Results
+
 
 The `results/` directory contains:
 
