@@ -1,0 +1,15 @@
+qiskit==2.5.2
+qiskit-aer==0.17.2
+qiskit-optimization==0.7.0
+numpy
+matplotlib
+networkx
+pandas
+
+qiskit==2.5.2
+qiskit-aer==0.17.2
+qiskit-optimization==0.7.0
+numpy
+matplotlib
+networkx
+pandas

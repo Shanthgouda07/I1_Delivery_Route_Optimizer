@@ -1,0 +1,3 @@
+method,route,distance,runtime_seconds,optimality_gap_percent,valid_sampling_rate_percent
+Classical Brute Force,Warehouse → A → B → C → D → E → Warehouse,66,0.0006184999992910889,0,
+QAOA,Warehouse → E → D → C → B → A → Warehouse,66,1.4458038000002489,0.0,94.37777777777778
